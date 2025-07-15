@@ -34,8 +34,8 @@ h1, h2, h3 {
 
 p {
   font-size: 1.2rem;
-  color: var(--text); /* changed from white for better contrast */
-  margin-bottom: 1.25rem; /* 20px */
+  color: var(--text); 
+  margin-bottom: 1.25rem; 
 }
 
 /* Navbar */
@@ -56,6 +56,7 @@ p {
 }
 
 .nav-links {
+  text-align: center;
   display: flex;
   gap: 1rem;
   list-style: none;
@@ -107,7 +108,6 @@ p {
 header.hero {
   text-align: center;
   margin-top: 10px;
-  /* background-color: var(--soft-accent); */ /* Fixed comment syntax */
 }
 
 header.hero h1 {
@@ -117,10 +117,11 @@ header.hero h1 {
 
 header.hero p {
   font-size: 1.2rem;
-  color: var(--text);
+  color:var(--light-bg);
   margin-top: 0;
   margin-bottom: 5px;
 }
+
 
 /* Section Titles */
 .section-title h2 {
@@ -129,6 +130,7 @@ header.hero p {
   padding-bottom: 5px;
   text-align: center;
   width: 100%;
+  color: #73605B;
   border-bottom: 2px solid var(--accent); /* removed typo 'x' */
 }
 
@@ -164,6 +166,7 @@ header.hero p {
 .project-card h3,
 .project-card p {
   margin: 15px;
+  color:#D09683;
 }
 
 /* About Section */
@@ -174,6 +177,7 @@ header.hero p {
   padding: 40px;
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  color: white;
 }
 
 .about-section h2 {
@@ -184,6 +188,7 @@ header.hero p {
 .about-section p {
   font-size: 1.1rem;
   line-height: 1.8;
+  color: white;
 }
 
 .about-photo {
@@ -290,6 +295,10 @@ footer {
   background-color: var(--border);
   font-family: 'Yeseva One', serif;
   font-size: 1rem;
+  color: white;
+}
+
+footer h1,h2,h3,p {
   color: white;
 }
 
@@ -410,4 +419,12 @@ textarea:focus {
 
 .social-icons img:hover {
   transform: scale(1.1);
+}
+
+.portfolio-grid p{
+  color: white;
+}
+
+.contact p{
+  color:#763626;
 }
