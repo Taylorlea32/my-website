@@ -28,3 +28,12 @@ ball.addEventListener("click", () => {
 setInterval(() => {
     moveBall();
 }, 1000);
+
+
+  const toggleButton = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  toggleButton.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+
