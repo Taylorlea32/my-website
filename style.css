@@ -9,10 +9,9 @@
   --card-bg: #2A3132;
   --light-bg: #763626;
   --soft-accent: #ffe6dd;
-
 }
-//#90AFC5
-//#f4f1ec
+
+/* Reset */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -23,7 +22,7 @@ body {
   font-family: var(--font-body);
   background-color: var(--background);
   color: var(--text);
-  padding: 0 20px;
+  padding: 0 1.25rem; /* 20px */
   line-height: 1.6;
 }
 
@@ -35,8 +34,8 @@ h1, h2, h3 {
 
 p {
   font-size: 1.2rem;
-  color: white;
-  margin-bottom: 20px;
+  color: var(--text); /* changed from white for better contrast */
+  margin-bottom: 1.25rem; /* 20px */
 }
 
 /* Navbar */
@@ -44,14 +43,14 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--background, #763626);
+  background-color: var(--background);
   padding: 1rem 2rem;
   position: relative;
   z-index: 100;
 }
 
 .logo {
-  font-family: var(--font-heading, serif);
+  font-family: var(--font-heading);
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -64,7 +63,7 @@ p {
 
 .nav-links li a {
   text-decoration: none;
-  color: var(--text, #330000);
+  color: var(--text);
   font-weight: 600;
   padding: 0.5rem;
 }
@@ -82,7 +81,7 @@ p {
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
-    color:#763626;
+    color: var(--text);
   }
 
   .nav-links {
@@ -91,7 +90,7 @@ p {
     top: 100%;
     left: 0;
     right: 0;
-    background-color: var(--background, white);
+    background-color: var(--background);
     display: none;
     padding: 1rem 2rem;
   }
@@ -105,11 +104,10 @@ p {
   }
 }
 
-
 header.hero {
   text-align: center;
   margin-top: 10px;
-  //background-color: var(--soft-accent);
+  /* background-color: var(--soft-accent); */ /* Fixed comment syntax */
 }
 
 header.hero h1 {
@@ -119,8 +117,8 @@ header.hero h1 {
 
 header.hero p {
   font-size: 1.2rem;
-  color: #763626;
-  margin-top: 0px;
+  color: var(--text);
+  margin-top: 0;
   margin-bottom: 5px;
 }
 
@@ -131,8 +129,7 @@ header.hero p {
   padding-bottom: 5px;
   text-align: center;
   width: 100%;
-  border-bottom: 2px solid var(--accent)x;
-  
+  border-bottom: 2px solid var(--accent); /* removed typo 'x' */
 }
 
 /* Portfolio Grid */
@@ -269,8 +266,8 @@ header.hero p {
 }
 
 .side-scroll-gallery img {
-  max-width: 7in;
-  max-height: 5in;
+  max-width: 300px; /* changed from 7in */
+  max-height: 220px; /* changed from 5in */
   object-fit: contain;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -291,10 +288,9 @@ footer {
   text-align: center;
   padding: 10px;
   background-color: var(--border);
-  font-family: 'Yeseva One', serif;;
+  font-family: 'Yeseva One', serif;
   font-size: 1rem;
   color: white;
-
 }
 
 /* Buttons */
@@ -363,7 +359,6 @@ textarea:focus {
   border-radius: 20px;
   scroll-behavior: smooth;
   margin-top: 20px;
-  
 }
 
 .favorites-page .side-scroll-gallery  img {
@@ -387,13 +382,14 @@ textarea:focus {
 }
 
 .gr_grid_container {
+  /* Empty, consider removing or adding styles */
 }
+
 .gr_grid_book_container {
- 
   float: left;
   width: 39px;
   height: 60px;
-  padding: 0px 0px;
+  padding: 0;
   overflow: hidden;
 }
 
